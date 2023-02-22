@@ -1,0 +1,560 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html{
+font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+
+}
+.brand a{
+    text-decoration: none;
+    
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*  navbar section*/
+.brand{
+    display: flex;
+}
+.brand img{
+    margin-left: 0px;
+    margin-top: 4px;
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
+    margin-right:15px;
+    margin-bottom: 8px;
+}
+.brand h1{
+    margin-top: 18px;
+    margin-right:100px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+.brand h1 span{
+    color: palevioletred;
+    font-weight: 700;
+}
+#nav{
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+#nav .header{
+    min-height: 8vh;
+    background-color: rgb(0 0 0 / 85%);
+    min-width: 100vw;
+
+}
+.header .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    padding: 0 10px;
+
+}
+.bar .fa{
+    font-size:15px;
+    margin-right: 5px;
+}
+#nav .nav-list ul a{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    text-decoration: none;
+}
+#nav .nav-list ul li:hover a{
+    color: palevioletred;
+    transition: 0.5s ease;
+}
+#nav .nav-list ul li{
+    display: inline-block;
+}
+
+
+/* end of nav-bar section*/
+#hero
+{
+    background-image: url('https://cdn.pixabay.com/photo/2017/04/09/09/29/blog-2215255__340.jpg');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+
+}
+#hero::after
+{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+  
+}
+#hero .hero{
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 30px;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 1.5s;
+    letter-spacing: 0.3rem;
+
+}
+.image img{
+   
+  width: 200px;
+  height: 200px;
+  border-radius:50%;
+  margin-left: 0px;
+  margin-top: 4px;
+  margin-right:15px;
+  object-fit: cover;
+}
+#hero h1:nth-child(1)
+{
+    animation-delay: 1s;
+}
+#hero h1:nth-child(2)
+{
+    animation-delay: 2s;
+}
+#hero h1:nth-child(3)
+{
+    animation:text_reveal_name 0.5s ease forwards;
+    font-weight:700;
+    animation-delay: 3s;
+    
+}
+ 
+#hero h1 span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0%;
+        background-color: palevioletred;
+        animation: text_reveal_box 1s ease;
+        animation-delay: 0.3s;
+}
+#hero h1:nth-child(1) span{
+   animation-delay:0.5s;
+}
+
+#hero h1:nth-child(2) span{
+    animation-delay:1.5s;
+ }
+ #hero h1:nth-child(3) span{
+    animation-delay:2.5s;
+ }
+#hero .ctn{
+    display: inline-block;
+    padding: 10px 30px;
+    color: pink;
+    background-color: transparent;
+    border:2px solid palevioletred;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background;
+    text-decoration: none;
+}
+#hero .ctn:hover{
+    color:white;
+    background-color: palevioletred;
+}
+
+/* key frames*/
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color: palevioletred;
+    }
+}
+
+/* end keyframes*/
+
+/*
+
+
+                       /*BLOG AND POST CONTENTt*/
+/*------------------------------------------------------------------------------------------------------------*/
+
+                       /* START LEFT CONTENT*/
+
+
+main{
+    background-color: #201f29;
+    color: white;
+}
+main .site-content{
+    display:grid;
+    grid-template-columns: 70% 30%;
+
+}
+main .posts{
+      
+    padding: 0px 40px 0px 80px;
+}
+main .post-content{
+   
+    width: 100%;
+}
+
+main .site-content .posts h3{
+    padding-top:20px;
+    padding-left: 19px;
+    font-size: 23px;
+    font-weight: bold;
+   
+    letter-spacing: 0.1rem;
+    padding-bottom: 1rem;
+    font-family: sans-serif;
+    position: relative;
+
+}
+main .site-content .posts h3::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 45px;
+    background-color: #01aef0;
+    left: 20px;
+    top: 54px;
+
+
+}
+
+
+main .site-content .post-content > .post-images, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+main .site-content .post-content > .post-images .post-info{
+    background: #3c3c42;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 15vw;
+    border-radius: 3rem;
+}
+
+main .site-content .post-content > .post-images > div{
+    overflow: hidden;
+}
+
+main .site-content .post-content > .post-images .img{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+main .site-content .post-content > .post-images .img:hover{
+    transform: scale(1.3);
+}
+main .post-info{
+    font-size: 1.5rem;
+    color: white;
+}
+main .post-info i{
+    color: #01aef0;
+    font-size: 20px;
+}
+main .post-title{
+    margin-top: 15px;
+   
+}
+main .post-title a{
+    font-size: 20px;
+    font-weight: 500;
+    color: papayawhip;
+    text-decoration: none;
+    
+}
+main .post-title a:hover{
+    color: palegoldenrod;
+    
+ 
+}
+main .site-content .post-content .post-title p{
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.text-gray{
+    color:gray;
+}
+main .btn{
+    margin-top: 5px;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-family:   'Ubuntu', sans-serif;
+    background-color: rgb(77, 92, 92);
+    color: white;
+}
+.site-content .pagination{
+ 
+    color: gray;
+    padding-left: 44rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+.site-content .pagination a{
+    padding: 1rem 2rem;
+    /* border-radius: 50%; */
+    margin: 0 0.3rem;
+    font-size: 1.5rem;
+    
+    text-decoration: none;
+    border-radius: 2px;
+    color: white;
+    font-weight: 700;
+    
+}
+.site-content .pagination .pages{
+    background-color: #2c2c38;
+    color: white;
+}
+
+
+/* END LEFT CONTENT*/
+
+/*---------------------------------------------------------------------------------------------------*/
+
+/* START RIGHT CONTENT*/
+/*--------------------------------------------------------------------------------------*/
+.sidebar{
+    padding: 67px 0 0 0;
+}
+
+.social1{
+    position: relative;
+}
+.social1::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 45px;
+    background-color: #01aef0;
+    left: 2px;
+    top: -2px;
+}
+
+.social1 a{
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid rgb(68, 67, 64);
+    color: aqua;
+    border-radius: 4px;
+    transition: all 0.3s;
+
+}
+.social1 a:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+  
+  /* POPULAR POST -----------------------------------------------------------------------------*/
+  .site-content .sidebar .popular-post .post-content{
+    padding: 57px 0 0 25px;
+}
+
+.site-content .sidebar .popular-post h2{
+    padding-top: 5rem;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+}
+.site-content .sidebar .popular-post h2::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 45px;
+    background-color: #01aef0;
+    left: 2px;
+    top: 85px;
+   
+}
+    
+ .img{
+    width: 330px;
+}
+
+
+ .site-content .post-content > .post-images .post-info{
+    background: gray;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 15vw;
+    border-radius: 3rem;
+}
+
+.sidebar .post-content > .post-images .post-infos{
+    background: gray;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 15vw;
+    border-radius: 3rem;
+    
+}
+.post-infos{
+    font-size: 15px;
+    padding: 5px;
+}
+.post-infos i{
+    color: #01aef0;
+    font-size: 18px;
+}
+.post-titles {
+    
+    font-size: 2rem;
+    font-weight: 900;
+    
+    font-family: 'Poppins';
+    margin-top: 8px;
+}
+
+.post-titles a{
+    text-decoration: none;
+    color: papayawhip;
+    font-size: 14px;
+}.post-titles a:hover{
+    color: palegoldenrod;
+    
+    
+}
+
+/* popular tags*/
+
+.site-content .sidebar .popular-tags h2{
+    padding-top: 5rem;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+}
+.site-content .sidebar .popular-tags h2::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 45px;
+    background-color: #01aef0;
+    left: 2px;
+    top: 82px;
+}
+
+
+.site-content .sidebar .popular-tags{
+    
+    font-size: 15px;
+    padding: 15px;
+    
+    ;
+}
+
+.site-content .sidebar .popular-tags .tags .tag{
+    background: gray;
+    padding: .4rem 1rem;
+    border-radius: 3rem;
+    margin: .4rem .6rem;
+    color: white;
+
+}
+.tags{
+    margin-top: 15px;
+}
+.tags1{
+   
+    background-color: gray;
+    margin-top: 15px;
+    width: 0px;
+}
+
+/* ----------------- Footer --------------------- */
+footer .footer-content{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px 20px 60px;
+    background-color:#2c2c37;
+    font-size: 14px;
+    color: gray;
+    
+}
+
+a:hover{
+    color: white !important;
+}
+.site-content .sidebar .popular-tags{
+    
+    font-size: 15px;
+    padding: 15px;
+    
+    ;
+}
+
+.site-content .sidebar .popular-tags .tags .tag{
+    background: gray;
+    padding: .4rem 2rem;
+    border-radius: 0.8rem;
+    margin: .4rem .6rem;
+    color: white;
+
+}

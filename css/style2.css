@@ -1,0 +1,543 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #1e1e28 !important;
+}
+html{
+font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+
+}
+.brand a{
+    text-decoration: none;
+    
+}
+
+
+/*  navbar section*/
+.brand{
+    display: flex;
+}
+.brand img{
+    margin-left: 0px;
+    margin-top: 4px;
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
+    margin-right:15px;
+    margin-bottom: 8px;
+}
+.brand h1{
+    margin-top: 18px;
+    margin-right:100px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+.brand h1 span{
+    color: palevioletred;
+    font-weight: 700;
+}
+#nav{
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+
+#nav .header{
+    min-height: 8vh;
+    background-color: rgb(0 0 0 / 85%);
+    min-width: 100vw;
+
+
+}
+.header .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    padding: 0 10px;
+
+}
+.bar .fa{
+    font-size:15px;
+    margin-right: 5px;
+}
+#nav .nav-list ul a{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    text-decoration: none;
+}
+#nav .nav-list ul li:hover a{
+    color: palevioletred;
+    transition: 0.5s ease;
+}
+#nav .nav-list ul li{
+    display: inline-block;
+}
+
+
+/* end of nav-bar section*/
+
+                       /*BLOG AND POST CONTENTt*/
+/*------------------------------------------------------------------------------------------------------------*/
+
+                       /* START LEFT CONTENT*/
+
+.post-content{
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+.blog-container{
+    background-color: #1e1e28;
+}
+main .site-content{
+    display:grid;
+    grid-template-columns: 70% 30%;
+
+}
+main .posts{
+      
+    padding: 0px 40px 0px 80px;
+}
+main  a{
+    font-size: 2rem;
+    font-weight:700;
+    color: papayawhip;
+    text-decoration: none;
+    font-family: 'Ubuntu';
+    
+    
+}
+main a:hover{
+    color: papayawhip;
+}
+main .btns{
+    
+        margin-top: 11px;
+        margin-right: 18px;
+        margin-bottom: 5px;
+        font-size: 12px;
+        padding: 4px 17px 4px 18px;
+        border-radius: 6px;
+        color: white;
+        border: none;
+    }
+main .btns1{
+    background: blue;
+}
+main .btns2{
+    background: #dc3545
+}
+main .post-content{
+   
+    width: 100%;
+}
+
+main .site-content .posts h3{
+    padding-top:28px;
+    padding-left: 0px;
+    font-size: 23px;
+    font-weight: bold;
+   
+    letter-spacing: 0.1rem;
+    padding-bottom: 1rem;
+    font-family: 'Poppins';
+    color: white;
+    position: relative;
+
+}
+main .site-content .posts h3::before{
+content: "";
+position: absolute;
+height: 3px;
+width: 45px;
+background-color: #01aef0;
+left: 2px;
+top: 60px;
+    
+
+}
+
+
+
+
+
+
+main .site-content .post-content > .post-images > div{
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+main .site-content .post-content > .post-images .img{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+main .site-content .post-content > .post-images .img:hover{
+    transform: scale(1.3);
+}
+
+main .post-title{
+    margin-top: 15px;
+   
+}
+
+main .site-content .post-content .post-title p{
+    margin-top: 15px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+}
+
+iframe{
+    width: 100%;
+    height: 463px;
+}
+.images-project{
+    display: flex;
+    flex-wrap: wrap;
+}
+.images-project a{
+    padding-right: 22px;
+}
+.images-project img{
+    width: 252px;
+    height: 131px;
+    margin-top: 20px;
+}
+main .btn{
+    margin-top: 5px;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-family:   'Ubuntu', sans-serif;
+    background-color: rgb(77, 92, 92);
+    color: white;
+}
+.site-content .pagination{
+ 
+    color: gray;
+    padding-left: 44rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+.site-content .pagination a{
+    padding: 1rem 2rem;
+    /* border-radius: 50%; */
+    margin: 0 0.3rem;
+    font-size: 1.5rem;
+    
+    text-decoration: none;
+    border-radius: 2px;
+    
+}
+.site-content .pagination .pages{
+    background-color: #2c2c38;
+    color: white;
+}
+.post-contents{
+    display: flex;
+}
+.post-contents .post-image img{
+    width: 330px;
+}
+.post-contents .post-title{
+    margin-left: 32px;
+}
+.post-contents .post-title a{
+    font-size: 18px;
+}
+.post-contents .post-title p{
+    font-size: 13px;
+}
+
+.photos {
+    padding-top: 12px;
+
+    
+
+}
+.photos h4{
+    font-family: "Poppins";
+    font-weight: 700;
+    color: aqua;
+    padding-bottom: 12px;
+}
+
+/* END LEFT CONTENT*/
+
+/*---------------------------------------------------------------------------------------------------*/
+
+/* START RIGHT CONTENT*/
+/*--------------------------------------------------------------------------------------*/
+.sidebar{
+    padding: 120px 0 0 0;
+}
+.sidebar1{
+    padding: 100px 0 0 0 !important;
+}
+
+.rate h2{
+    color: white;
+    font-size: 23px;
+    padding-left: 15px;
+    position: relative;
+
+}
+.rate h2::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 45px;
+    background-color: #01aef0;
+    left: 18px;
+    top: 32px;
+
+}
+
+.stars{
+    padding: 20px 20px 20px 0px;
+   
+    background: #2c2c37;
+    margin-left: 20px;
+    width: 75%;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.stars i{
+    font-size: 26px;
+    padding-left: 20px;
+    color: wheat;
+    transition: all 0.4s;
+}
+.stars i:hover{
+    color: wheat !important;
+    font-size: 28px;
+
+}
+.follow{
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+}
+.follow h2{
+    position: relative;
+}
+.follow h2::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 45px;
+    background-color: #01aef0;
+    left: 2px;
+    top: 29px;
+    
+}
+.social1{
+    margin-top: 12px;
+}
+
+.social1 a{
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid rgb(68, 67, 64);
+    color: aqua;
+    border-radius: 4px;
+    transition: all 0.3s;
+
+}
+.social1 a:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+/* popular tags*/
+
+
+.site-content .sidebar .popular-tags h2{
+    padding-top: 4rem;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    padding-bottom: 14px;
+    
+}
+
+.site-content .sidebar .popular-tags h2::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 45px;
+    background-color: #01aef0;
+    left: 2px;
+    top: 71px;
+    
+    
+}
+
+.site-content .sidebar .popular-tags{
+    
+    font-size: 15px;
+    padding: 15px;
+    
+    ;
+}
+
+.site-content .sidebar .popular-tags .tags .tag{
+    background: gray;
+    padding: .4rem 2rem;
+    border-radius: 0.8rem;
+    margin: .4rem .6rem;
+    color: white;
+
+}
+
+.tags{
+    margin-top: 15px;
+}
+.tags1{
+   
+    background-color: gray;
+    margin-top: 15px;
+    width: 0px;
+   
+}
+.comment-name{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.comment-name img{
+    width: 30px;
+    border-radius: 50%;
+}
+.comment-detail{
+    background-color: #2c2c38;
+    width: 70%;
+    padding: 12px;
+    margin-left: 15px;
+    border-radius: 5px;
+
+}
+.comment-detail p{
+    margin-bottom: 0 !important;
+    font-size: 12px;
+    color: wheat;
+
+}
+
+.comment h2{
+    color: white;
+    position: relative;
+    font-size: 22px;
+}
+.comment h2::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 45px;
+    background-color: #01aef0;
+    left: 2px;
+    top: 32px;
+
+}
+
+/* ----------------- Footer --------------------- */
+footer .footer-content{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px 20px 60px;
+    background-color:#2c2c37;
+    font-size: 14px;
+    color: gray;
+    
+}
+
+a:hover{
+    color: white !important;
+}
+.comment-section{
+    margin-top: 22px;
+    color: wheat;
+    font-size: 13px;
+    padding: 20px;
+    background-color: #2c2c38;
+    border-radius: 3px;
+    font-family: sans-serif;
+}
+.comment-write label, .name label{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 2px;
+
+}
+.comment-section input{
+    padding: 5px;
+    width: 50%;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+.comment-section textarea{
+    padding: 5px;
+    width: 50%;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+.comment-section button{
+    padding: 8px 20px 8px 20px;
+    transition: all 0.3s;
+    border: none;
+    border-radius: 4px;
+    margin-top: 3px;
+    background-color: #01aef0;
+}
+.comment-section button:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+.tags a{
+    font-size: 15px !important;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.post-title li{
+    color: white !important;
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    margin: 12px;
+    letter-spacing: 0.5px;
+
+
+}
+footer{
+    margin-top: 45px;
+    background-color: #1e1e28 !important;
+}
+
